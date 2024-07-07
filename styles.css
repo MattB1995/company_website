@@ -78,11 +78,14 @@ background-color: var(--clr-amz-accent-2);
 font-family: var(--ff-primary);
 color: var(--clr-light);
 margin: 0;
+padding: 0;
 font-size: var(--fs-body);
 line-height: 1.6;
 text-align: center;
 
 }
+
+
 
 .logo {
     max-width: 100px;
@@ -103,9 +106,28 @@ text-align: center;
 }
 
 .person {
-    max-width: 350px;
-    
-    
+    max-width: 350px; 
+}
+
+.footer {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list {
+text-decoration: none;
+list-style-type: none;   
+}
+
+.footer-contact,
+.footer-address {
+    margin: 0 10rem;
+}
+
+.footer-contact {
+    text-align: start;
 }
 
 
