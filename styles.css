@@ -105,9 +105,41 @@ text-align: center;
     color: #232F3E;
 }
 
+
+
+
 .person {
     max-width: 350px; 
 }
+
+.persons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us__title {
+    display: block;
+    text-align: center;
+}
+
+.about-us__title {
+    margin-bottom: 5rem;
+}
+
+.person__img {
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     background: var(--clr-dark);
@@ -116,14 +148,26 @@ text-align: center;
     justify-content: center;
 }
 
-.contact-list {
+.contact-list,
+.nav__list {
 text-decoration: none;
 list-style-type: none;   
+}
+
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-decoration: none;
 }
 
 .footer-contact,
 .footer-address {
     margin: 0 10rem;
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
+    text-decoration: none;
 }
 
 .footer-contact {
