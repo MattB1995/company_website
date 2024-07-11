@@ -35,6 +35,7 @@ https://developer.amazon.com/en-US/alexa/branding/alexa-guidelines/brand-guideli
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
     --tx: 1px 1px 2px black;
+    --tx-2: 0.5px 0.5px 1px black;
 }
 
 @media (min-width: 800px) {
@@ -154,13 +155,15 @@ text-align: center;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
     padding: 4rem;
 }
+
+
 
 .contact__form {
     width: 100%;
     max-width: 600px;
+    margin: 2rem;
 }
 
 .contact__form h3 {
@@ -211,9 +214,9 @@ text-align: center;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: var(--clr-amz-accent-1);
-    color: white;
+    color: var(--clr-light);
     cursor: pointer;
     text-shadow: var(--tx);
 }
@@ -227,13 +230,33 @@ text-align: center;
     .top-row {
         flex-direction: column;
     }
+    .contact {
+        flex-direction: column;
+    }
+    #map {
+        margin: 2rem;
+    }
 }
 
 
 #map {
     height: 400px;
     width: 600px;
+    margin: 2rem;
+    min-width: 400px;
     
+}
+
+.work-for-us {
+    background-image: url("../images/actr-7.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.work-for-us h3, h2, p {
+    color: inherit;
+    text-shadow: var(--tx-2);
 }
 
 
@@ -279,6 +302,23 @@ list-style-type: none;
 .footer-contact {
     text-align: start;
 }
+
+
+.apply-here-text {
+    color: var(--clr-amz-accent-1);
+    text-decoration: underline;
+}
+
+.apply-here-text:hover {
+    color: var(--clr-amz-accent-1-dark);
+}
+
+.partner-text {
+    color: var(--clr-amz-accent-1);
+    text-shadow: var(--tx-2);
+    
+}
+
 
 
 
