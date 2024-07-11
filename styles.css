@@ -107,6 +107,23 @@ text-align: center;
 
 
 
+.nav__list {
+    display: flex;
+    justify-content: right;
+    
+}
+
+
+
+.nav__item {
+    padding: 0 25px;
+}
+
+.nav__item:hover {
+    color: var(--clr-amz-accent-1);
+}
+
+
 
 .person {
     max-width: 350px; 
