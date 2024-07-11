@@ -249,8 +249,12 @@ text-align: center;
 
 .work-for-us {
     background-image: url("../images/actr-7.jpg");
-    background-size: cover;
-    background-position: center;
+     /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 1000px;
 }
 
 
