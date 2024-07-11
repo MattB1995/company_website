@@ -19,6 +19,7 @@ https://developer.amazon.com/en-US/alexa/branding/alexa-guidelines/brand-guideli
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-amz-accent-1: #FF9900;
+    --clr-amz-accent-1-dark: #cd7b00;
     --clr-amz-accent-2: #232F3E;
     --clr-amz-accent-3: #1399FF;
 
@@ -33,6 +34,7 @@ https://developer.amazon.com/en-US/alexa/branding/alexa-guidelines/brand-guideli
     /*boxshadow / second line is for 2nd shadow, they layer on top of each other*/
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    --tx: 1px 1px 2px black;
 }
 
 @media (min-width: 800px) {
@@ -147,11 +149,91 @@ text-align: center;
     margin-bottom: 2rem;
 }
 
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    padding: 4rem;
+}
+
+.contact__form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact__form h3 {
+    text-align: center;
+}
+
+.contact__form p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact__form-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input__field {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input__textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.input__textarea,
+.input__field {
+    font-family: var(--ff-primary);
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--clr-amz-accent-1);
+    color: white;
+    cursor: pointer;
+    text-shadow: var(--tx);
+}
+
+.btn:hover {
+    background-color: var(--clr-amz-accent-1-dark);
+    
+}
+
+@media (max-width: 600px) {
+    .top-row {
+        flex-direction: column;
+    }
+}
+
 
 #map {
     height: 400px;
     width: 600px;
-    margin: 0 auto ;
+    
 }
 
 
