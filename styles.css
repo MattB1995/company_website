@@ -229,6 +229,7 @@ text-align: center;
     color: var(--clr-light);
     cursor: pointer;
     text-shadow: var(--tx);
+    box-shadow: var(--bs);
 }
 
 .btn:hover {
