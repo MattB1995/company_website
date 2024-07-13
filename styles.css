@@ -361,6 +361,14 @@ list-style-type: none;
     margin: 4rem auto;
 }
 
+.our-mission {
+    background-image: url(../images/actr-22.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 
