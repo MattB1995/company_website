@@ -334,6 +334,32 @@ list-style-type: none;
 }
 
 
+.fleet__item {
+    display: flex;
+    margin: 4rem;
+    justify-content: center;
+    
+}
+
+.fleet__title {
+    margin-bottom: 4rem;
+}
+
+.fleet__item-img {
+    max-width: 500px;
+}
+
+
+.fleet__item-paragraph {
+    max-width: 400px;
+    text-align: start;
+    margin-left: 4rem;
+}
+
+.our-mission__paragraph {
+    max-width: 800px;
+    margin: 4rem auto;
+}
 
 
 
