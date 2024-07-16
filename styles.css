@@ -18,6 +18,7 @@ https://developer.amazon.com/en-US/alexa/branding/alexa-guidelines/brand-guideli
 
     --clr-light: #fff;
     --clr-dark: #303030;
+    --clr-dark-lighter: #6a6a6a;
     --clr-amz-accent-1: #FF9900;
     --clr-amz-accent-1-dark: #cd7b00;
     --clr-amz-accent-2: #232F3E;
@@ -95,7 +96,9 @@ text-align: center;
 }
 
 .intro {
-    background-color: var(--clr-light);
+
+    background-color: var(--clr-dark-lighter);
+    background-blend-mode: multiply;
     background-image: url(../images/actr-5.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -259,12 +262,38 @@ text-align: center;
 }
 
 .work-for-us {
+    background-color: var(--clr-dark-lighter);
+    background-blend-mode: multiply;
     background-image: url("../images/actr-7.jpg");
      /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work-list {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0;   
+}
+
+.work-list li {
+    margin: 1rem;
+}
+
+
+.work-for-us__top {
+    margin-bottom: 4rem;
+}
+
+#apply-btn {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -362,6 +391,8 @@ list-style-type: none;
 }
 
 .our-mission {
+    background-color: var(--clr-dark-lighter);
+    background-blend-mode: multiply;
     background-image: url(../images/actr-22.jpg);
     background-attachment: fixed;
     background-position: center;
