@@ -48,3 +48,25 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+
+/* To animate elements just once leave this comment
+   To animate elements each time remove this comment 
+    else {
+      entry.target.classList.remove('show');
+    }
+    */
+
+
+  });
+});
+
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
