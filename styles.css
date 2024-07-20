@@ -225,7 +225,7 @@ text-align: center;
 
 .btn {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: var(--fs-body);
     border: none;
     border-radius: 5px;
     background-color: var(--clr-amz-accent-1);
@@ -233,22 +233,49 @@ text-align: center;
     cursor: pointer;
     text-shadow: var(--tx);
     box-shadow: var(--bs);
+    outline: none;
 }
 
 .btn:hover {
     background-color: var(--clr-amz-accent-1-dark);
-    
 }
 
-@media (max-width: 600px) {
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    padding: 15px; /* Some padding */
+    border-radius: 20%; /* Rounded corners */
+  }
+  
+  #backToTopBtn:hover {
+    background-color: var(--clr-amz-accent-1-dark); /* Add a dark-grey background on hover */
+  }
+
+@media (max-width: 800px) {
+
+
     .top-row {
         flex-direction: column;
     }
     .contact {
         flex-direction: column;
     }
+    
     #map {
-        margin: 2rem;
+        padding: 1rem;
+        width: 100%;
+        
+        
+        
+    }
+    .contact {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        
     }
 }
 
@@ -400,26 +427,7 @@ list-style-type: none;
     background-size: cover;
 }
 
-#backToTopBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 30px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: var(--clr-amz-accent-1); /* Set a background color */
-    color: var(--clr-light); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 20%; /* Rounded corners */
-    font-size: var(--fs-body); /* Increase font size */
-    text-shadow: var(--tx);
-  }
-  
-  #backToTopBtn:hover {
-    background-color: var(--clr-amz-accent-1-dark); /* Add a dark-grey background on hover */
-  }
+
 
 
   .hidden {
