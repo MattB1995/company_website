@@ -28,6 +28,8 @@ async function initMap() {
 
 initMap();
 
+//I think I need to add function which will decide which elements to give hidden class with transform property -100 and every second to give +100 so it will animate from the other side
+
 
 // Get the button:
 let backToTopBtn = document.getElementById("backToTopBtn");
@@ -52,8 +54,10 @@ function topFunction() {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
+  
+    
     if(entry.isIntersecting) {
-      entry.target.classList.add('show');
+      entry.target.classList.add('show-1');
     }
 
 /* To animate elements just once leave this comment
@@ -69,4 +73,6 @@ const observer = new IntersectionObserver((entries) => {
 
 
 const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements2 = document.querySelectorAll('.hidden-2');
 hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements2.forEach((el) => observer.observe(el));
