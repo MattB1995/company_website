@@ -101,16 +101,27 @@ text-align: center;
     justify-content: right;
 }
 
-
-
 .nav__item {
-    padding: 0 25px;
-   
+    padding: 0 25px; 
 }
 
 .nav__item:hover {
     color: var(--clr-amz-accent-1);
 }
+
+.nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+    text-decoration: none;
+}
+
+.contact-list,
+.nav__list {
+text-decoration: none;
+list-style-type: none;   
+}
+
 /*---------------------/-NAV-/---------------------*/
 
 
@@ -126,13 +137,11 @@ text-align: center;
     background-size: cover;
 }
 
-
 .logo-large {
     max-width: 500px;
     margin: 5rem auto;
 
 }
-
 
 #logo-text {
     color: var(--clr-light);
@@ -143,7 +152,6 @@ text-align: center;
     color: var(--clr-amz-accent-1);
     text-shadow: var(--tx-2);
 }
-
 
 /*---------------------/-INTRO-/---------------------*/
 
@@ -177,22 +185,41 @@ text-align: center;
 
 /*---------------------/-ABOUT-/---------------------*/
 
+/*-----------------------WORK-------------------*/
 
+.work-for-us {
+    background-color: var(--clr-dark-lighter);
+    background-blend-mode: multiply;
+    background-image: url("../images/actr-7.jpg");
+     /* The parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.work-list {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    margin-top: 0.5rem;
+    padding: 0;   
+}
 
+.work-list li {
+    margin: 1rem;
+}
 
+.work-for-us h3, h2, p {
+    color: inherit;
+    text-shadow: var(--tx-2);
+}
 
-
-
-
-
-
-
-
-
-
-
-/*-------------------WORK-------------------*/
+.work-for-us__top,
+.work-for-us__bottom {
+    margin-bottom: 4rem;
+}
 
 .top-row {
     display: flex;
@@ -208,13 +235,6 @@ text-align: center;
 .apply-here-text:hover {
     color: var(--clr-amz-accent-1-dark);
 }
-
-
-
-
-
-
-
 
 .work-list:nth-child(2){
     transition-delay: 100ms;
@@ -253,7 +273,6 @@ text-align: center;
     }
 }
 
-
 /*-------------------/-WORK-/-------------------*/
 
 /*-------------------BUTTONS-------------------*/
@@ -275,6 +294,12 @@ text-align: center;
     background-color: var(--clr-amz-accent-1-dark);
 }
 
+#apply-btn {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #backToTopBtn {
     display: none;
     position: fixed;
@@ -284,72 +309,12 @@ text-align: center;
     padding: 15px;
     border-radius: 20%;
   }
+
 /*-------------------/-BUTTONS-/-------------------*/
 
 
 
-
-
-
-.work-for-us {
-    background-color: var(--clr-dark-lighter);
-    background-blend-mode: multiply;
-    background-image: url("../images/actr-7.jpg");
-     /* The parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.work-list {
-    text-decoration: none;
-    list-style-type: none;
-    display: inline-block;
-    text-align: center;
-    margin-top: 0.5rem;
-    padding: 0;   
-}
-
-.work-list li {
-    margin: 1rem;
-}
-
-
-.work-for-us__top,
-.work-for-us__bottom {
-    margin-bottom: 4rem;
-}
-
-#apply-btn {
-    margin-top: 4rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.work-for-us h3, h2, p {
-    color: inherit;
-    text-shadow: var(--tx-2);
-}
-
-
-
-
-.contact-list,
-.nav__list {
-text-decoration: none;
-list-style-type: none;   
-}
-
-.nav__link {
-    color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-body-light);
-    text-decoration: none;
-}
-
-
+/*-------------------FLEET-------------------*/
 
 .fleet__item {
     display: flex;
@@ -386,8 +351,9 @@ list-style-type: none;
     background-size: cover;
 }
 
+/*-------------------/-FLEET-/-------------------*/
 
- /*-------------------ANIMATIONS-------------------*/
+/*-------------------ANIMATIONS-------------------*/
 
   .hidden {
     opacity: 0;
@@ -409,7 +375,6 @@ list-style-type: none;
     transform: translateX(0);
   }
   
-
   @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
@@ -427,8 +392,6 @@ list-style-type: none;
     padding: 4rem;
     flex-wrap: wrap;
 }
-
-
 
 .contact__form {
     width: 100%;
@@ -480,15 +443,8 @@ list-style-type: none;
 }
 
 #map {
-    
-
     height: 400px;
-    
-    min-width: 600px;
-   
-    
-    
-    
+    min-width: 600px;   
 }
 
 @media (max-width: 800px) {
@@ -496,16 +452,12 @@ list-style-type: none;
         margin: 2rem auto;
     }
 
-
     #map{ 
         
         min-width: 100%;
         max-width: 100%;
         margin: auto;
-}
-
-
-   
+    }   
 }
 
 /*-------------------/-CONTACT-/------------------*/
