@@ -340,6 +340,7 @@ list-style-type: none;
     display: flex;
     margin: 4rem;
     justify-content: center; 
+    
 }
 
 .fleet__title {
@@ -348,22 +349,29 @@ list-style-type: none;
 
 .fleet__item-img {
     max-width: 500px;
+    margin-right: 2rem;
 }
 
 .fleet__item-paragraph {
     max-width: 400px;
     text-align: start;
+    margin-left: 2rem;
     
 }
 
-@media(max-width:800px) {
+@media(max-width:1000px) {
     .fleet__item {
         display: block;
         margin: 1rem auto;   
     }
     .fleet__item-img {
         max-width: 100%;
+        margin: 1rem 0;
     }
+    .fleet__item-paragraph {
+        max-width: 100%;
+        margin: 1rem 0;
+    }    
 }
 /*-------------------/-FLEET-/-------------------*/
 
