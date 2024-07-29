@@ -35,7 +35,7 @@ async function initMap() {
   const marker = new AdvancedMarkerElement({
     map: map,
     position: position,
-    title: "Uluru",
+    title: "EXOS Logistics Ltd",
   });
 }
 
