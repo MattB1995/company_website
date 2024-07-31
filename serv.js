@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const {readFile} = require('fs');
-
 const path = require('path');
+const r = require('dotenv');
+
+
+
 
 // Serve static files from the "public" directory
 app.use(express.static(__dirname));
@@ -17,5 +20,7 @@ app.get('/', (request, response) => {
         }
     })
 });
+
+
 
 app.listen(port);
